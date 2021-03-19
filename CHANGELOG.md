@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/sonrad10/whide-types/compare/v1.1.0...v1.2.0) (2021-03-19)
+
+
+### Features
+
+* changed to publishing only compiled typescript code on npm ([ab58349](https://github.com/sonrad10/whide-types/commit/ab583497f37d76bdc8998041e31168cc5ff05df8))
+* Moved breakpoints from EditorController to functions in ExtendedCodeEditorWrapper ([c26bee9](https://github.com/sonrad10/whide-types/commit/c26bee9c2bcedbb775bb98284ff219171985064d))
+
+
+### Bug Fixes
+
+* updated config directory path to match with the package name ([e1d7f37](https://github.com/sonrad10/whide-types/commit/e1d7f37717080fe0e7938d1cbb6ed88cf95486c7))
+
 ## [1.1.0](https://github.com/sonrad10/whide-types/compare/v1.0.1...v1.1.0) (2021-03-18)
 
 
