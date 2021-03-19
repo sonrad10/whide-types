@@ -21,7 +21,8 @@ export {
 	IOController,
 	EditorController,
 	RunPanelController,
-	RunPanelInstanceController
+	RunPanelInstanceController,
+	DebuggerControllerInterface,
 } from "./controllers/";
 
 export {

@@ -1,3 +1,5 @@
+import { BinaryTree } from "@whide/hwhile-wrapper";
+import { CustomDict } from "@whide/hwhile-wrapper/src/types/CustomDict";
 import { Transform } from "stream";
 
 /**
@@ -26,10 +28,30 @@ export interface RunPanelController {
 }
 
 /**
+ * Handle debug controls being pressed
+ */
+export interface DebuggerControllerInterface {
+	/**
+	 * Run to program completion, or until the next breakpoint
+	 */
+	run() : void;
+	/**
+	 * Execute the next line of the program, then pause
+	 */
+	step() : void;
+	/**
+	 * Stop executing the program
+	 */
+	stop() : void;
+}
+
+/**
  * Controller for a single output region of the "run" panel
  */
 export interface RunPanelInstanceController {
 	readonly stream: Transform;
 	readonly output: string;
+	variables: CustomDict<BinaryTree>;
+	debuggerCallbackHandler?: DebuggerControllerInterface;
 	name: string;
 }
