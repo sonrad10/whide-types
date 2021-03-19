@@ -1,14 +1,10 @@
-import CodeMirror from "codemirror";
+import CodeMirror, { LineHandle } from "codemirror";
 import { CodeEditorWrapper } from "./";
 
 export type LineWidgetType = { line: CodeMirror.LineHandle, widget: CodeMirror.LineWidget };
 
 export type ExtendedCodeEditorWrapper = CodeEditorWrapper & {
 	editorWrapper: CodeEditorWrapper,
-	_breakpoints: CodeMirror.LineHandle[],
-	_errors: LineWidgetType[],
-	_infos: LineWidgetType[],
-	_warnings: LineWidgetType[],
 	/**
 	 * Show an error message in the editor
 	 * @param line		The line to show on
@@ -48,4 +44,12 @@ export type ExtendedCodeEditorWrapper = CodeEditorWrapper & {
 	 * @param enabled	`true` to enable a breakpoint, `false` to disable, `undefined` to toggle
 	 */
 	toggleBreakpoint(line: number|CodeMirror.LineHandle, enabled?: boolean) : Promise<void>,
+	/**
+	 * Get the line numbers of each line where a breakpoint is enabled
+	 */
+	getBreakpoints() : Promise<number[]>;
+	/**
+	 * The same as {@link getBreakpoints}, but returning a {@link LineHandle} instead of the line number
+	 */
+	getBreakpointLines() : Promise<LineHandle[]>;
 };
