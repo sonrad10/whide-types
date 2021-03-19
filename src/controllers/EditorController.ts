@@ -15,6 +15,8 @@ export interface EditorController extends EventEmitter {
  	 */
 	readonly openFiles : string[];
 
+	readonly breakpoints : string[];
+
 	/**
 	 * Open the file at the given path in a new tab in the editor, and focus on it.
 	 * Only focuses if the file is already open.

@@ -24,7 +24,11 @@ export interface RunPanelController {
 	 */
 	getByName(name: string) : Promise<RunPanelInstanceController | undefined>;
 
-	controllers: RunPanelInstanceController[];
+	/**
+	 * The tabs controlled by the controller
+	 * TODO: better description here
+	 */
+	readonly controllers: RunPanelInstanceController[];
 }
 
 /**
