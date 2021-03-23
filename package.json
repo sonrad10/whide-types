@@ -11,7 +11,8 @@
   "license": "MIT",
   "dependencies": {
     "@whide/hwhile-wrapper": "^1.4.0",
-    "filer": "^1.2.0"
+    "memfs": "^3.2.0",
+    "unionfs": "^4.4.0"
   },
   "devDependencies": {
     "@types/codemirror": "0.0.108",

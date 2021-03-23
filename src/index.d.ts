@@ -8,11 +8,11 @@ export {
 } from "./types/";
 
 export {
-	CustomFs,
-	CustomPath
-} from "./files";
-
-export { Argument, PluginFunction, PluginFunctionParameters, PluginModule } from "./plugins/";
+	Argument,
+	PluginFunction,
+	PluginFunctionParameters,
+	PluginModule
+} from "./plugins/";
 
 export {
 	InputPromptTypes,
@@ -32,5 +32,3 @@ export {
 	ExtendedCodeEditorWrapper,
 	LineWidgetType
 } from "./codeEditor/"
-
-export * as Filer from "./filer";

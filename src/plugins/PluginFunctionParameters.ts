@@ -1,10 +1,5 @@
-import {
-	CustomFs,
-	CustomPath,
-	EditorController,
-	IOController,
-	RunPanelController
-} from "../";
+import { EditorController, IOController, RunPanelController } from "../";
+import { IFS } from "unionfs/lib/fs";
 
 /**
  * Hold the parameters to pass to the function when it's called.
@@ -30,10 +25,5 @@ export interface PluginFunctionParameters {
 	 * The filesystem object to use;
 	 * will be `node/fs` for the local system, or an emulator when in-browser
 	 */
-	fs: CustomFs,
-	/**
-	 * The path filesystem object to use;
-	 * will be `node/path` for the local system, or an emulator when in-browser
-	 */
-	path: CustomPath,
+	fs: IFS
 }
