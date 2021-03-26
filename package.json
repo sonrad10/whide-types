@@ -10,7 +10,7 @@
   "author": "Alaric Whitehead",
   "license": "MIT",
   "dependencies": {
-    "@whide/hwhile-wrapper": "^1.4.0",
+    "@whide/hwhile-wrapper": "^1.5.3",
     "memfs": "^3.2.0",
     "unionfs": "^4.4.0"
   },
