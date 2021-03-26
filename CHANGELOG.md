@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/sonrad10/whide-types/compare/v1.2.0...v1.3.0) (2021-03-26)
+
+
+### Features
+
+* changed to using memfs instead of filer ([be32d8e](https://github.com/sonrad10/whide-types/commit/be32d8ee71c979cab3c9df9c871ce3f344ed5796))
+
 ## [1.2.0](https://github.com/sonrad10/whide-types/compare/v1.1.0...v1.2.0) (2021-03-19)
 
 
