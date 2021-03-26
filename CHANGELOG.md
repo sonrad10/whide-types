@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.1](https://github.com/sonrad10/whide-types/compare/v1.3.0...v1.3.1) (2021-03-26)
+
+
+### Bug Fixes
+
+* upgraded hwhile-wrapper dependency to latest version ([d7a083b](https://github.com/sonrad10/whide-types/commit/d7a083bd01082313ef9fcaa4e3a6f94e21cbc414))
+
 ## [1.3.0](https://github.com/sonrad10/whide-types/compare/v1.2.0...v1.3.0) (2021-03-26)
 
 
