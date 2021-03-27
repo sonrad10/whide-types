@@ -5,6 +5,7 @@ export {
 	Menu,
 	MenuItem,
 	TreeConverter,
+	SettingsItem,
 } from "./types/";
 
 export {

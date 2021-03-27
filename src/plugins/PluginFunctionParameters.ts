@@ -25,5 +25,12 @@ export interface PluginFunctionParameters {
 	 * The filesystem object to use;
 	 * will be `node/fs` for the local system, or an emulator when in-browser
 	 */
-	fs: IFS
+	fs: IFS,
+	/**
+	 * The settings' values, as configured by the user.
+	 * This is a key-value map where keys are the setting `id`s, and values are the string input values ({@link SettingsItem.id}).
+	 */
+	config: {
+		[key: string]: string
+	}
 }
