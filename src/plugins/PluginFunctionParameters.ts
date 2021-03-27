@@ -29,8 +29,9 @@ export interface PluginFunctionParameters {
 	/**
 	 * The settings' values, as configured by the user.
 	 * This is a key-value map where keys are the setting `id`s, and values are the string input values ({@link SettingsItem.id}).
+	 * Values may be undefined if no default value was set.
 	 */
 	config: {
-		[key: string]: string
+		[key: string]: string|undefined,
 	}
 }
