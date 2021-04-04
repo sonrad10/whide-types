@@ -1,4 +1,4 @@
-import { Menu, PluginFunction, TreeConverter } from "../";
+import { Menu, PluginFunction, TreeConverter, SettingsItem } from "../";
 
 /**
  * The type exported from a plugin's default file
@@ -6,5 +6,6 @@ import { Menu, PluginFunction, TreeConverter } from "../";
 export type PluginModule = {
 	menus?: Menu[],
 	converters?: TreeConverter[],
-	default: PluginFunction|PluginFunction[]
+	settings?: SettingsItem[],
+	default: PluginFunction|PluginFunction[],
 };
