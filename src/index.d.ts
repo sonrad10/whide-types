@@ -19,6 +19,7 @@ export {
 	InputPromptTypes,
 	InputPromptParams,
 	OutputPromptParams,
+	PromptParams,
 	IOController,
 	EditorController,
 	RunPanelController,

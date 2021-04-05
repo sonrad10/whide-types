@@ -8,6 +8,9 @@
  */
 export type InputPromptTypes = "string" | "number" | "path" | "file" | "folder";
 
+/**
+ * Parameter object for {@link IOController.getInput} method
+ */
 export interface InputPromptParams {
 	/**
 	 * The prompt message
@@ -29,6 +32,9 @@ export interface InputPromptParams {
 	type?: InputPromptTypes;
 }
 
+/**
+ * Parameter object for {@link IOController.showOutput} method
+ */
 export interface OutputPromptParams {
 	/**
 	 * @param message	The output message
@@ -41,11 +47,30 @@ export interface OutputPromptParams {
 }
 
 /**
+ * Parameter object for {@link IOController.prompt} method
+ */
+export interface PromptParams {
+	/**
+	 * @param title		Prompt title string
+	 */
+	title?: string,
+	/**
+	 * @param message	Message/description to show to the user
+	 */
+	message: string,
+	/**
+	 * Text to display in each button prompt
+	 */
+	options?: string[],
+}
+
+/**
  * Controller interface to allow user input/output
  */
 export interface IOController {
 	/**
 	 * Function to get user input
+	 * @return	The result of the input prompt, or undefined if the user cancelled
 	 */
 	getInput(params: InputPromptParams) : Promise<string|undefined>;
 
@@ -53,4 +78,10 @@ export interface IOController {
 	 * Function to show output to the user
 	 */
 	showOutput(params: OutputPromptParams) : Promise<void>;
+
+	/**
+	 * Function to display a message to the user with button prompts
+	 * @return	The name of the button pressed
+	 */
+	prompt(params: PromptParams): Promise<string>;
 }
