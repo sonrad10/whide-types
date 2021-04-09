@@ -4,7 +4,6 @@ export {
 	ExtendedBinaryTree,
 	Menu,
 	MenuItem,
-	TreeConverter,
 	SettingsItem,
 } from "./types/";
 
