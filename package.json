@@ -1,6 +1,6 @@
 {
   "name": "@whide/whide-types",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Type declarations for use with the Whide editor's plugin api",
   "types": "src/index.d.ts",
   "scripts": {

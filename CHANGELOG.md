@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.1](https://github.com/sonrad10/whide-types/compare/v1.5.0...v1.5.1) (2021-04-09)
+
+
+### Bug Fixes
+
+* removed hangover tree converter usages ([dfa3606](https://github.com/sonrad10/whide-types/commit/dfa3606c3cdc24a31beb3d40eb0e00172165dfe4))
+
 ## [1.5.0](https://github.com/sonrad10/whide-types/compare/v1.4.0...v1.5.0) (2021-04-09)
 
 
