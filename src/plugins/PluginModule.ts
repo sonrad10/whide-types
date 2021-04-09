@@ -1,4 +1,4 @@
-import { Menu, PluginFunction, TreeConverter, SettingsItem } from "../";
+import { Menu, PluginFunction, SettingsItem } from "../";
 
 /**
  * The type exported from a plugin's default file
