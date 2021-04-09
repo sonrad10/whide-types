@@ -4,7 +4,6 @@ export {
 	ExtendedBinaryTree,
 	Menu,
 	MenuItem,
-	TreeConverter,
 	SettingsItem,
 } from "./types/";
 
@@ -19,6 +18,7 @@ export {
 	InputPromptTypes,
 	InputPromptParams,
 	OutputPromptParams,
+	PromptParams,
 	IOController,
 	EditorController,
 	RunPanelController,

@@ -5,7 +5,6 @@ import { Menu, PluginFunction, TreeConverter, SettingsItem } from "../";
  */
 export type PluginModule = {
 	menus?: Menu[],
-	converters?: TreeConverter[],
 	settings?: SettingsItem[],
 	default: PluginFunction|PluginFunction[],
 };
